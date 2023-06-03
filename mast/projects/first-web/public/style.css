@@ -1,9 +1,39 @@
 #hbar{
+    top: 0px;
+    position: sticky;
+    color: black;
     width: auto;
-    height: 100px;
-    background-color: rgb(98, 98, 220);
-    align-content: center;
+    height: 50px;
+    background-color: rgb(144, 168, 233);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-width: 1px;
+    border-color: rgb(48, 45, 45);
+    border-style: outset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #title{
+    text-align: center;
+    height: min-content;
+    width: fit-content;
+    margin-left: 20px;
+}
 
+#links{
+    height: min-content;
+    width: max-content;
+    display: flex;
+}
+.link{
+    margin: 4px;
+}
+body{
+    text-align: center;
+    margin: 0%;
+}
+#landimg{
+    height: 20%;
+    width: 40%;
 }
