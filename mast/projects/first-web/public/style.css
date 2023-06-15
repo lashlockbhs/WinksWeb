@@ -1,39 +1,114 @@
-#hbar{
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0%;
+    display: grid;
+}
+
+#main {
+    background-color: white;
+    z-index: 1;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
+}
+
+#hbar {    
+    z-index: 2;
     top: 0px;
     position: sticky;
-    color: black;
+    color: rgb(0, 0, 0);
     width: auto;
     height: 50px;
-    background-color: rgb(144, 168, 233);
+    background-color: rgb(16, 16, 17);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-width: 1px;
     border-color: rgb(48, 45, 45);
     border-style: outset;
-
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#title{
+
+#title {
     text-align: center;
     height: min-content;
     width: fit-content;
     margin-left: 20px;
 }
 
-#links{
+#links {
     height: min-content;
     width: max-content;
     display: flex;
 }
-.link{
+
+.link {
     margin: 4px;
 }
-body{
-    text-align: center;
-    margin: 0%;
+
+#landimg {
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
-#landimg{
-    height: 20%;
-    width: 40%;
+
+#catch {
+    display: grid;
+    font-weight: bolder;
+    font-optical-sizing: auto;
+    font-size: 50px;
+    background-color: rgba(182, 185, 192, 0.295);
+    width: 100%;
+    justify-content: center;
+}
+
+#note {
+    margin-bottom: 10px;
+    justify-self: center;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+
+
+.slider {
+    justify-self: left;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+#slide1 {
+    width: 30%;
+}
+
+.slide-img {
+    object-fit: contain;
+    width: 30vw;
+    height: 100%;
+}
+
+.img-showcase {
+    flex-shrink: 2;
+    margin-top: 10px;
+    display: inline-flex;
+}
+
+#shownote {
+    display: grid;
+    width: 50%;
+}
+
+#showtitle {
+    font-size: 30px;
+    width: fit-content;
+}
+
+#showexp {
+    font-size: small;
 }
