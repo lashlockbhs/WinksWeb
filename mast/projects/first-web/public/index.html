@@ -21,16 +21,17 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <div id="hbar">
+        <div id="title"> JACOB WINKLEMAN </div>
+
         <div id="links">
             <a class="link"> Prints </a>
             <a class="link"> Posters </a>
             <a class="link"> About </a>
             <a class="link"> Contact </a>
         </div>
-        <div id="title"> JACOB WINKLEMAN </div>
     </div>
 
-    <img src="images/main/DSC_0421-Enhanced.jpg" id="landimg"> </img>
+    <img src="images/main/websitethingidek.jpg" id="landimg"> </img>
 
     <div id="main">
 
@@ -42,24 +43,61 @@
             </div>
         </div>
 
-        <div class="img-showcase">
+        <div id="top-slider">
+            <div class="slider" id="random-display">
+                <img src="images/main/DSC_0838.jpg" class="main-slide-img">
+                <img src="images/main/DSC_0855_20(1).jpg" class="main-slide-img">
+                <img src="images/main/DSC_0867.jpg" class="main-slide-img">
+                <img src="images/main/DSC_0998.jpg" class="main-slide-img">
+            </div>
+        </div>
+
+
+        <div id = "themes-catch"> THEMES 
+            <hr>
+            <div id="note">
+                Capturing the world
+            </div>
+        </div>
+
+        <div id="themes-slider">
+            <div class="slider" id="themes-slider-div">
+                
+                <img src="images/main/DSC_0375-2.jpg" class="main-slide-img">
+
+            </div>
+        </div>
+
+        <div id="city-display">
             <div class="slider" id="slide1">
                 <img src="images/main/DSC_0106-2.jpg" class="slide-img">
                 <img src="images/main/DSC_0066.jpg" class="slide-img">
             </div>
-            <div id = "shownote">
-                <div id = "showtitle"> Title </div>
-                <div id = "showexp"></div>
+            <div id="shownote">
+                <div id="showtitle"> Urban </div>
+                <div id="showexp"></div>
             </div>
         </div>
 
         <script type="text/javascript">
-            $('.slider').slick({
+            $('#slide1').slick({
                 dots: true,
                 infinite: true,
                 speed: 300,
                 slidesToShow: 1,
                 arrows: true,
+            });
+        </script>
+
+        <script type="text/javascript">
+            $('#random-display').slick({
+                dots: true,
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 3,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
             });
         </script>
 

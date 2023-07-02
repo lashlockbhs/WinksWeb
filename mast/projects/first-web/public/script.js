@@ -2,14 +2,12 @@
 const headbar = document.getElementById("hbar");
 const title = document.getElementById("title");
 const links = document.getElementById('links');
-
-
+const body = document.getElementsByTagName("body");
 
 const randEl = (ar) => {
     const n = Math.floor(Math.random() * ar.length)
     return ar[n], n;
 };
-
 
 title.style.fontSize = headbar.clientHeight < headbar.clientWidth ? headbar.clientHeight /2 + "px" : headbar.clientWidth /2 + "px";
 
@@ -34,6 +32,18 @@ for(let n = 0; n < links.children.length; n++){
 
     }
 };
+const landImg = document.getElementById("landimg");
+let currTop = 0;
+const scrollby = 2;
+landImg.setAttribute("style", "top: " +  currTop + "px;");
+
+//phind AI
+$(window).scroll(function() {
+    landImg.setAttribute("style", ("top: " + (currTop-($(this).scrollTop()/scrollby))  + "px;"));
+});
+//change scroll speed of object
+
+
 
 
 
