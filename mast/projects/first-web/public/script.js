@@ -39,11 +39,21 @@ landImg.setAttribute("style", "top: " +  currTop + "px;");
 
 //phind AI
 $(window).scroll(function() {
-    landImg.setAttribute("style", ("top: " + (currTop-($(this).scrollTop()/scrollby))  + "px;"));
+    landImg.setAttribute("style", ("top: " + (currTop-($(this).scrollTop()/scrollby) + 50)  + "px;") );
 });
 //change scroll speed of object
 
 
+const arrowleft = document.getElementsByClassName("slick-prev");
+const arrowright = document.getElementsByClassName("slick-next");
+
+
+for(const el of arrowleft){
+    el.style.left = "14px";
+}
+for(const el of arrowright){
+    el.style.right = "14px";
+}
 
 
 
