@@ -67,8 +67,7 @@ body {
     overflow: hidden;
     background-color: rgb(199, 199, 199);
     z-index: 1;
-    justify-self: center;
-    justify-items: center;
+    justify-content: center;
     width: 100%;
 
 }
@@ -183,63 +182,51 @@ body {
 
 /* Themes slider */
 #themes-slider-wrap{
-    width: 100%;
+    justify-content: center;
+    width: 75vw;
     display: flex;
 
 }
 #left{
+    height: fit-content;
     display: grid;
-    width: 50vw;
-
+    width: 50%;
+}
+#right{
+    width: 50%;
 }
 
 #themes-slider {
     margin: 10px;
-    display: inline-flex;
     overflow: hidden;
-    justify-content: start;
 }
 
 #themes-slider-div {
-    width: 100%;
-    justify-self: left;
     background-color: rgb(212, 212, 214);
-}
-
-#themes-slider-div .main-slide-img {
-    height: 50%;
-
 }
 
 #themes-slider-div-2 {
-    width: 100%;
 
-    justify-self: left;
 
     background-color: rgb(212, 212, 214);
-}
-
-#themes-slider-div-2 .main-slide-img {
-
-    height: 50%;
 }
 
 #themes-slider-div-3 {
+    display: grid;
+    justify-self: right;
     background-color: rgb(212, 212, 214);
-    width: 70%;
+
 }
 
 #themes-slider-div-3 .main-slide-img {
-
-    max-width: 100%;
+    object-fit: fill;
 }
 
 
 
 
 .theme-slider-title {
-    padding-top: 1%;
-    left: 25%;
+    padding-top: 0.5%;
     z-index: 2;
     color: white;
     position: absolute;
@@ -251,7 +238,7 @@ body {
 
 }
 #left .theme-slider-title{
-    left: 2%;
+
 }
 
 

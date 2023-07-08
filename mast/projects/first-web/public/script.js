@@ -55,6 +55,19 @@ for(const el of arrowright){
     el.style.right = "14px";
 }
 
+const left = document.getElementById("left");
+const themeslide3 = document.getElementById("themes-slider-div-3");
+console.log(left.clientHeight);
+const theme3img = themeslide3.getElementsByClassName("main-slide-img");
+
+for(const el of theme3img){
+    el.setAttribute("style", "height: " + (left.clientHeight - 50) + "px;");
+    console.log(el);
+}
+
+
+
+//themeslide3.setAttribute("style", "height: " + left.clientHeight + "px");
 
 
 
